@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget android-versionCode="14" id="com.yeah.app" ios-CFBundleVersion="14" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Yeah</name>
+    <description>
+        hello word
+    </description>
+    <author email="enquiry@avtns.com" href="https://www.avtns.com">
+        Advance Technology Network Solution (M) Sdn. Bhd.
+    </author>
+    <content src="index.html" />
+    <preference name="orientation" value="portrait" />
+    <preference name="fullscreen" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="disallowOverscroll" value="true" />
+    <preference name="target-device" value="handset" />
+    <preference name="prerendered-icon" value="false" />
+    <preference name="detect-data-types" value="true" />
+    <preference name="exit-on-suspend" value="false" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="stay-in-webview" value="false" />
+    <preference name="ios-statusbarstyle" value="black-opaque" />
+    <preference name="show-splash-screen-spinner" value="true" />
+    <preference name="auto-hide-splash-screen" value="true" />
+    <preference name="android-windowSoftInputMode" value="stateHidden|adjustResize" />
+    <preference name="android-installLocation" value="auto" />
+    <preference name="android-minSdkVersion" value="19" />
+    <preference name="android-build-tool" value="gradle" />
+    <preference name="phonegap-version" value="cli-6.5.0" />
+    <plugin name="cordova-plugin-inappbrowser" />
+    <plugin name="cordova-plugin-splashscreen" />
+    <plugin name="cordova-plugin-device" />
+    <plugin name="cordova-plugin-whitelist" />
+    <plugin name="cordova-plugin-camera">
+        <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="Browse and upload photo" />
+    </plugin>
+    <plugin name="phonegap-plugin-barcodescanner">
+        <variable name="CAMERA_USAGE_DESCRIPTION" value="Scan QRcode to make payment" />
+    </plugin>
+    <plugin name="phonegap-plugin-push" spec="1.9.2">
+        <param name="SENDER_ID" value="1030746675371" />
+    </plugin>
+    <plugin name="cordova-plugin-customurlscheme">
+        <param name="URL_SCHEME" value="empay" />
+    </plugin>
+    <plugin source="git" spec="https://github.com/VersoSolutions/CordovaClipboard.git" />
+    <plugin name="uk.co.workingedge.phonegap.plugin.launchnavigator" source="npm" />
+    <icon src="icon.png" />
+    <splash src="splash.png" />
+    <platform name="ios">
+        <icon height="76" platform="ios" src="res/icon/ios/icon-76.png" width="76" />
+        <icon height="152" platform="ios" src="res/icon/ios/icon-76@2x.png" width="152" />
+        <icon height="167" platform="ios" src="res/icon/ios/icon-83.5@2x.png" width="167" />
+        <icon height="57" src="res/icon/ios/icon-57.png" width="57" />
+        <icon height="72" src="res/icon/ios/icon-72.png" width="72" />
+        <icon height="40" src="res/icon/ios/icon-40.png" width="40" />
+        <icon height="80" src="res/icon/ios/icon-40@2x.png" width="80" />
+        <icon height="60" src="res/icon/ios/icon-60.png" width="60" />
+        <icon height="120" src="res/icon/ios/icon-60@2x.png" width="120" />
+        <icon height="180" src="res/icon/ios/icon-60@3x.png" width="180" />
+        <icon height="29" src="res/icon/ios/icon-small.png" width="29" />
+        <icon height="58" src="res/icon/ios/icon-small@2x.png" width="58" />
+        <icon height="100" src="res/icon/ios/Icon-Small-50@2x.png" width="100" />
+        <icon height="114" src="res/icon/ios/Icon@2x.png" width="114" />
+        <icon height="50" src="res/icon/ios/Icon-Small-50.png" width="50" />
+        <icon height="144" src="res/icon/ios/Icon-72@2x.png" width="144" />
+        <icon height="87" src="res/icon/ios/Icon-29@3x.png" width="87" />
+        <splash height="1136" src="res/screen/ios/Default-568h@2x~iphone.png" width="640" />
+        <splash height="1334" src="res/screen/ios/Default-667h.png" width="750" />
+        <splash height="2208" src="res/screen/ios/Default-736h.png" width="1242" />
+        <splash height="960" src="res/screen/ios/Default@2x~iphone.png" width="640" />
+        <splash height="480" src="res/screen/ios/Default~iphone.png" width="320" />
+    </platform>
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+</widget>

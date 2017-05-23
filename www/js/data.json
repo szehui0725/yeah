@@ -1,0 +1,57 @@
+{
+    "hot": [{
+        "id": 1,
+        "imageUrl": "img/image5.jpg",
+        "title": "Table"
+    }, {
+        "id": 2,
+        "imageUrl": "img/image5.jpg",
+        "title": "Table"
+    }, {
+        "id": 3,
+        "imageUrl": "img/image5.jpg",
+        "title": "Table"
+    }, {
+        "id": 4,
+        "imageUrl": "img/image5.jpg",
+        "title": "Table"
+    }],
+
+    "item": [{
+        "id": 11,
+        "imageUrl": "img/image6.jpg",
+        "title": "Table",
+        "place": "UTM",
+        "price": "30"
+    }, {
+        "id": 12,
+        "imageUrl": "img/image7.jpg",
+        "title": "Chair",
+        "place": "UPM",
+        "price": "30"
+    }, {
+        "id": 13,
+        "imageUrl": "img/image6.jpg",
+        "title": "Shoes",
+        "place": "UTM",
+        "price": "30"
+    }, {
+        "id": 14,
+        "imageUrl": "img/image6.jpg",
+        "title": "Handphone",
+        "place": "UNIMAS",
+        "price": "10"
+    }, {
+        "id": 15,
+        "imageUrl": "img/image7.jpg",
+        "title": "Ball",
+        "place": "UTM",
+        "price": "30"
+    }, {
+        "id": 16,
+        "imageUrl": "img/image6.jpg",
+        "title": "Cupboard",
+        "place": "USM",
+        "price": "30"
+    }]
+}

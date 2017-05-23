@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, target-densitydpi=medium-dpi, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-opaque">
+    <title></title>
+    <link rel="stylesheet" href="css/framework7.material.min.css">
+    <link rel="stylesheet" href="css/framework7.material.colors.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+    <div class="statusbar-overlay"></div>
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Top Navbar-->
+
+            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+
+            <div class="pages navbar-fixed toolbar-bottom-fixed">
+                <!-- Page, "data-page" contains page name -->
+                <div data-page="main" class="page">
+                    <div class="navbar">
+                        <div class="navbar-inner">
+                            <div class="center sliding">Yeah!!!</div>
+                            <div class="notification">
+                                <a href="notification.html"><i class="fa fa-bell" id="bell"></i></a>
+                            </div>
+                            <!--<div class="subnavbar">
+                              <div class="search">
+                                  <a href="search.html"><i class="fa fa-search"></i> search</a>
+                              </div>
+                            </div>-->
+                        </div>
+                    </div>
+
+                    <!-- <div class="navbar">
+                        <div class="navbar-inner">
+                            <div class="left"></div>
+                            <div class="center">Sub Navbar</div>
+                            <div class="right"></div> -->
+                    <!-- Sub navbar -->
+                    <div class="subnavbar">
+                        <div class="search">
+                            <a href="search.html" id="searchText"><i class="fa fa-search"></i>  Search</a>
+                        </div>
+                    </div>
+
+
+                    <!-- <form class="searchbar">
+                        <div class="searchbar-input">
+                            <input type="search" placeholder="Search">
+                            <a href="#" class="searchbar-clear"></a>
+                        </div>
+                        <a href="#" class="searchbar-cancel">Cancel</a>
+                    </form> -->
+
+                    <!-- Search Bar overlay-->
+
+                    <!-- Scrollable page content -->
+
+                    <div class="page-content">
+                        <!-- <div class="background">
+                            <p>
+                                <i class="fa fa-globe">  Save Earth! Save Environment! </i>
+                                <div class="slogan">LET GO YOUR ITEM</div>
+                            </p>
+                        </div>
+                        <hr /> -->
+                        <div class="content-block-title"><b>Popular</b></div>
+                        <div class="swiper-container banner-swiper" id="slider">
+                            <div class="swiper-wrapper">
+
+                            </div>
+
+                            <div class="swiper-pagination banner-pagination"></div>
+                        </div>
+
+                        <div class="content-block-title"><b>New</b></div>
+                        <div class="list-block recent-added">
+                            <ul>
+
+                            </ul>
+                        </div>
+
+                        <!-- <div class="page-content product-catalog-page">
+                        </div> -->
+                        <!-- <div class="row" id="grid"> -->
+                        <!-- Each "cell" has col-[widht in percents] class -->
+
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom Toolbar-->
+            <div class="toolbar toolbar-bottom" id="mainToolbar">
+                <div class="toolbar-inner">
+                    <!-- Toolbar links -->
+                    <a href="main.html" class="link"><i class="fa fa-home"></i><div>Home</div></a>
+                    <a href="category.html" class="link"><i class="fa fa-contao"></i><div>Category</div></a>
+                    <a href="selling.html" class="link"><i class="fa fa-server"></i><div>Trade</div></a>
+                    <a href="allChat.html" class="link"><i class="fa fa-database"></i><div>Chat</div></a>
+                    <a href="more.html" class="link"><i class="fa fa-cog"></i><div>More</div></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="login-screen">
+        <!-- Default view-page layout -->
+        <div class="view">
+            <div class="page">
+                <!-- page-content has additional login-screen content -->
+                <div class="page-content login-screen-content">
+                    <div class="login-screen-title"><img src="../img/yeah_white.png" class="img-rounded"></div>
+                    <!-- Login form -->
+                    <form>
+                        <div class="list-block">
+                            <ul>
+                                <li class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label">Username: </div>
+                                        <div class="item-input">
+                                            <input type="text" name="username" placeholder="username">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-content">
+                                    <div class="item-inner">
+                                        <div class="row password-input">
+                                            <div class="item-title label">Password: </div>
+                                            <div class="item-input">
+                                                <input type="password" name="password" id="loginPassword" placeholder="password">
+                                            </div>
+                                            <i class="fa fa-eye" id="viewLoginPw"></i>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="list-block">
+                            <ul>
+                                <li class="row" style="justify-content: space-around;">
+                                    <div class="col-50">
+                                        <a href="#" class="button" id="login">Login</a>
+                                    </div>
+                                    <div class="col-50">
+                                        <a href="" class="button" id="register">Sign Up</a>
+                                    </div>
+                                </li>
+                                <li align="center">
+                                    <a href="#" class="item-link list-button" id="linkToForgetPw"> Forget password? </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- <div class="list-block">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="item-link list-button" id="btnLogin">Sign In</a>
+                                    </li>
+                                </ul>
+                            </div> -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup popup-register">
+        <div class="navbar">
+            <div class="navbar-inner">
+                <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+                <div class="center sliding">Sign Up</div>
+            </div>
+        </div>
+        <div class="list-block">
+            <ul>
+                <li class="item-content">
+                    <div class="item-inner">
+                        <div class="item-title label">Fullname:</div>
+                        <div class="item-input">
+                            <input type="text" id="regFullname" placeholder="fullname" />
+                        </div>
+                    </div>
+                </li>
+                <li class="item-content">
+                    <div class="item-inner">
+                        <div class="item-title label">Username: </div>
+                        <div class="item-input">
+                            <input type="text" name="name" id="regUsername" placeholder="username">
+                        </div>
+                    </div>
+                </li>
+                <li class="item-content">
+                    <div class="item-inner">
+                        <div class="item-title label">Password: </div>
+                        <div class="item-input">
+                            <input type="password" name="password" id="regPassword" placeholder="password">
+                        </div>
+                        <i class="fa fa-eye" id="viewLoginPw"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-inner">
+                            <div class="item-title label">Gender: </div>
+                            <div class="item-input">
+                                <select id="regGender">
+                                  <option selected disabled></option>
+                        <option>Male</option>
+                        <option>Female</option>
+                      </select>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- <li class="item-content">
+                    <div class="item-inner">
+                        <div class="item-title label">Email:</div>
+                        <div class="item-input">
+                            <input type="text" id="" placeholder="email" />
+                        </div>
+                    </div>
+                </li>
+                <li class="item-content">
+                    <div class="item-inner">
+                        <div class="item-title label">NRIC:</div>
+                        <div class="item-input">
+                            <input type="text" id="" placeholder="nric" />
+                        </div>
+                    </div>
+                </li>-->
+                <li class="item-content">
+                    <div class="item-inner">
+                        <div class="item-title label">Date of birth:</div>
+                        <div class="item-input">
+                            <input type="text" id="regDob" placeholder="dob" />
+                        </div>
+                    </div>
+                </li>
+                <!-- <li class="item-content">
+                    <div class="item-inner">
+                        <div class="item-title label">[[country]]</div>
+                        <div class="item-input">
+                            <select id="regCountry"></select>
+                        </div>
+                    </div>
+                </li> -->
+                <li class="item-content">
+                    <div class="item-inner">
+                        <div class="item-title label">Hp no:</div>
+                        <input type="text" id="regDialCode" placeholder="+60" readonly />
+                        <input type="text" id="regHp" placeholder="mobile_no" />
+                    </div>
+                </li>
+                <!-- <li class="item-content">
+                    <div class="item-inner">
+                        <div class="item-title label">Full address:</div>
+                        <div class="item-input">
+                            <textarea type="text" id="" placeholder="address"></textarea>
+                        </div>
+                    </div>
+                </li> -->
+                <!-- <li class="item-content">
+                    <div class="item-inner">
+                        <div class="item-title label lang">[[city]]</div>
+                        <div class="item-input">
+                            <input type="text" id="" placeholder="[[ph_city]]" class="lang" />
+                        </div>
+                    </div>
+                </li>
+                <li class="item-content">
+                    <div class="item-inner">
+                        <div class="item-title label lang">[[post_code]]</div>
+                        <div class="item-input">
+                            <input type="text" id="" placeholder="[[ph_post_code]]" class="lang" />
+                        </div>
+                    </div>
+                </li>
+                <li class="item-content">
+                    <div class="item-inner">
+                        <div class="item-title label lang">[[state]]</div>
+                        <div class="item-input">
+                            <input type="text" id="" placeholder="[[ph_state]]" class="lang" />
+                        </div>
+                    </div>
+                </li> -->
+                <!-- <li>
+                    <label class="label-checkbox item-content">
+                      <input type="checkbox" name="" value="" checked="checked"/>
+                      <div class="item-media">
+                        <i class="icon icon-form-checkbox"></i>
+                      </div>
+                      <div class="item-inner">
+                        <div class="item-title lang">[[agree_title]]</div>
+                      </div>
+                    </label>
+                </li> -->
+
+                <li class="row" style="justify-content: space-around;">
+                    <div class="col-50">
+                        <a href="#" class="button button-fill" id="btnRegCancel">Cancel</a>
+                    </div>
+                    <div class="col-50">
+                        <a href="#" class="button button-fill" id="btnRegSubmit">Sign Up</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="popover popover-change-pic">
+        <div class="popover-angle"></div>
+        <div class="popover-inner">
+            <div class="list-block">
+                <ul>
+                    <!--li><a href="#" class="list-button item-link" id="capturePhoto">Capture Photo</a></li>
+                    <li><a href="#" class="list-button item-link" id="captureEditable">Capture Editable Photo</a></li-->
+                    <li>
+                        <p align="center" id="titleUpdate">Update Profile Picture</p>
+                    </li>
+                    <li><a href="#" class="list-button item-link" id="fromLibrary">Browse Photo Library</a></li>
+                    <li><a href="#" class="list-button item-link" id="captureEditable">Camera</a></li>
+                    <!--li><a href="#" class="list-button item-link" id="fromAlbum">From Photo Album</a></li-->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="popover popover-change-pic1">
+        <div class="popover-angle"></div>
+        <div class="popover-inner">
+            <div class="list-block">
+                <ul>
+                    <li>
+                        <p align="center" id="titleUpdate">Update Item Picture</p>
+                    </li>
+                    <li><a href="#" class="list-button item-link" id="fromLibrary">Browse Photo Library</a></li>
+                    <li><a href="#" class="list-button item-link" id="captureEditable">Camera</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup popup-recent-added">
+        <div class="navbar">
+            <div class="navbar-inner">
+                <!--div class="left">
+                <a href="#" class="link icon-only open-panel"><i class="fa fa-bars"></i></a>
+            </div-->
+                <div class="center sliding">Item Details</div>
+                <div class="right">
+                    <a href="#" class="close-popup link">
+                        <i class="fa fa-close"></i>
+                        <span>close</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- <p class="name"></p> -->
+        <div class="content-block" style="margin-top: 0">
+            <div class="content-block-inner">
+                <img/><i class="fa fa-star" id="addWishlist"></i>
+                <table>
+                  <tr>
+                      <td class="detail1" >Name </td>
+                      <td class="name"></td>
+                  </tr>
+                    <tr>
+                        <td class="detail1">Description </td>
+                        <td class="description"></td>
+                    </tr>
+                    <tr>
+                        <td class="detail1">Price </td>
+                        <td class="price"></td>
+                    </tr>
+                    <tr>
+                        <td class="detail1">Place </td>
+                        <td class="place"></td>
+                    </tr>
+                    <tr>
+                        <td class="detail1">Owner's username </td>
+                        <td class="ownerUsername"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup popup-category">
+        <div class="navbar">
+            <div class="navbar-inner">
+                <!--div class="left">
+                <a href="#" class="link icon-only open-panel"><i class="fa fa-bars"></i></a>
+            </div-->
+                <div class="center sliding">Category</div>
+                <div class="right">
+                    <a href="#" class="close-popup link">
+                        <i class="fa fa-close"></i>
+                        <span>close</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="name"></p>
+        <div class="content-block" style="margin-top: 0">
+            <div class="content-block-inner">
+                <img/>
+                <table>
+                    <tr>
+                        <td class="item1"></td>
+                    </tr>
+                    <tr>
+                        <td class="item2"></td>
+                    </tr>
+                    <tr>
+                        <td class="item3"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/template7" id="test">
+        {{#each hot}}
+        <div class="swiper-slide" id="{{id}}">
+            <img src="{{imageUrl}}">
+        </div>
+        {{/each}}
+    </script>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!--script type="text/javascript" src="js/socket.io.js"></script-->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.qrcode.min.js"></script>
+    <!--script type="text/javascript" src="js/qrcode.min.js"></script-->
+    <script type="text/javascript" src="js/helper.js"></script>
+    <!-- <script type="text/javascript" src="js/lang.js"></script> -->
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/toast.js"></script>
+    <script type="text/javascript" src="js/init.js"></script>
+    <script type="text/javascript" src="js/auth.js"></script>
+    <script type="text/javascript" src="js/function.js"></script>
+    <script type="text/javascript">
+        gap.initialize();
+        checkUser();
+        homePage();
+    </script>
+</body>
+
+</html>

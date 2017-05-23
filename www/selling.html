@@ -1,0 +1,198 @@
+<div data-page="selling" class="page toolbar-fixed navbar-fixed">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="center">Trade</div>
+        </div>
+    </div>
+    <!-- Additional "tabbar-scrollable" class -->
+    <div class="toolbar tabbar tabbar-scrollable">
+        <div class="toolbar-inner">
+            <a href="#tab1" class="tab-link active">Sell</a>
+            <a href="#tab2" class="tab-link">Exchange</a>
+            <a href="#tab3" class="tab-link">Request</a>
+        </div>
+    </div>
+
+    <div class="page-content">
+        <!-- Tabs, tabs wrapper -->
+        <div class="tabs">
+            <!-- Tab 1, active by default -->
+            <div id="tab1" class="tab active">
+                <div class="list-block">
+                    <ul>
+                        <li class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title-label">Item photo: </div>
+                                <div class="item-input">
+                                    <a href="#" class="item-content open-popover" data-popover=".popover-change-pic1" id="editChangePic">
+                                        <div class="item-inner" align="center">
+                                            <!--img id="editProfilePic2" src="./img/1.png"/-->
+                                            <img id="editProfilePic3" src="#" />
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title-label">Item name: </div>
+                                <div class="item-input">
+                                    <input type="text" id="sellName" placeholder="item name">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title-label">Item description: </div>
+
+                                <div class="item-input">
+                                    <input type="text" id="sellDescription" placeholder="item description">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title-label">Item price: </div>
+                                <div class="item-input">
+                                    <input type="text" id="sellPrice" placeholder="item price">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="item-link smart-select">
+                                <select id="sellPlace" name="place">
+                                  <option>
+
+                                  </option>
+                              <option value="UM" >University Malaya</option>
+                              <option value="UTM" >University Teknologi Malaysia</option>
+                              <option value="UPM" >University Putra Malaysia</option>
+                              <option value="UUM">University Utara Malaysia</option>
+                              <option value="USM">University Sains Malaysia</option>
+                              <option value="UMS" >University Malaysia Sabah</option>
+                              <option value="UMT">University Malaysia Terengganu</option>
+                              <option value="UNIMAS">University Malaysia Sarawak</option>
+                            </select>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label: ">Place </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                </div>
+                <li class="row" style="justify-content: space-around;">
+                    <div>
+                        <a href="#" class="button button-fill" id="sell">sell</a>
+                    </div>
+                </li>
+                </ul>
+            </div>
+            <!-- Tab 2 -->
+            <div id="tab2" class="tab">
+                <div class="list-block">
+                    <ul>
+                        <li class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title-label">Item photo: </div>
+                                <div class="item-input">
+                                    <a href="#" class="item-content open-popover" data-popover=".popover-change-pic1" id="editChangePic">
+                                        <div class="item-inner" align="center">
+                                            <!--img id="editProfilePic2" src="./img/1.png"/-->
+                                            <img id="editProfilePic3" src="" />
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title-label">Item name: </div>
+                                <div class="item-input">
+                                    <input type="text" id="exchangeName" placeholder="item name">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title-label">Item description: </div>
+                                <div class="item-input">
+                                    <input type="text" id="exchangeDescription" placeholder="item description">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="item-link smart-select">
+                                <select id="exchangePlace" name="place">
+                                  <option>
+
+                                  </option>
+                              <option value="UM" >University Malaya</option>
+                              <option value="UTM" >University Teknologi Malaysia</option>
+                              <option value="UPM" >University Putra Malaysia</option>
+                              <option value="UUM">University Utara Malaysia</option>
+                              <option value="USM">University Sains Malaysia</option>
+                              <option value="UMS" >University Malaysia Sabah</option>
+                              <option value="UMT">University Malaysia Terengganu</option>
+                              <option value="UNIMAS">University Malaysia Sarawak</option>
+                            </select>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label: ">Place </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="row" style="justify-content: space-around;">
+                            <div>
+                                <a href="#" class="button button-fill" id="exchange">exchange</a>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Tab 3 -->
+            <div id="tab3" class="tab">
+                <div class="list-block">
+                    <ul>
+                        <li class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title-label">Item name: </div>
+                                <div class="item-input">
+                                    <input type="text" id="requestName" placeholder="item name">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title-label">Item description: </div>
+                                <div class="item-input">
+                                    <input type="text" id="requestDescription" placeholder="item description">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title-label">Item price: </div>
+                                <div class="item-input">
+                                    <input type="text" id="requestPrice" placeholder="item price">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title-label">Owner's name: </div>
+                                <div class="item-input">
+                                    <input type="text" id="ownerName" placeholder="owner name">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="row" style="justify-content: space-around;">
+                                <a href="#" class="button button-fill" id="request">request</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>

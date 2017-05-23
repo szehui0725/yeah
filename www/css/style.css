@@ -1,0 +1,504 @@
+.toolbar a.link {
+    line-height: initial;
+    height: 48px;
+    display: flex;
+    flex-direction: column;
+}
+
+.row.password-input i.fa-eye {
+    position: absolute;
+    line-height: 85px;
+    right: 16px;
+    width: 30px;
+    text-align: center;
+    color: black;
+}
+
+.popup-recent-added .content-block img {
+    height: 150px;
+    width: 150px;
+    margin-left: 35%
+}
+
+.description {
+    font-size: 15px;
+}
+
+.detail1 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+tr {
+    height: 50px;
+}
+
+p.name {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+/*
+p.main{
+  font-size: 20px;
+    font-weight: bold;
+}*/
+
+img.img-circle {
+    height: 100px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+img.img-thumbnail {
+    height: 70px;
+    margin-left: -6px;
+}
+
+.img-slide {
+    height: 100px;
+}
+
+img.img-rounded {
+    height: 250px;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.fa#addWishlist{
+  color:red;
+  margin-left:2%;
+  border-color: black;
+}
+
+/*.fa#addWishlist:hover{
+  color:black;
+}*/
+
+.slogan {
+    font-size: 20px;
+    text-align: center;
+    font-family: cursive;
+}
+
+.swiper-container {
+    height: 200px;
+    text-align: center;
+}
+
+.swiper-slide {
+    background: #fff;
+}
+
+.swiper-slide span {
+    text-align: center;
+    display: block;
+    margin: 20px;
+    font-size: 21px;
+}
+
+.navbar-inner, .toolbar-inner {
+    background-color: #9c27b0;
+}
+
+.swiper-container banner-swiper {
+    height: 100px;
+}
+
+h2 {
+    font-family: monospace;
+}
+
+a.button.button-big {
+    background-color: white;
+    width: 80%;
+    margin-left: 35px;
+}
+
+.button {
+    color: white;
+}
+
+.button.button-fill#btnRegCancel {
+    background-color: #9c27b0;
+    width: 60%;
+    margin-left: 60px;
+}
+
+.button.button-fill#btnRegSubmit {
+    background-color: #9c27b0;
+    width: 60%;
+    margin-left: 20px;
+}
+
+.button.button-fill#btnReset {
+    background-color: #9c27b0;
+    width: 60%;
+    margin-left: 60px;
+}
+
+.button.button-fill#btnUpdate {
+    background-color: #9c27b0;
+    width: 60%;
+    margin-left: 20px;
+}
+
+.button.button-fill#btnPassClear {
+    background-color: #9c27b0;
+    width: 60%;
+    margin-left: 60px;
+}
+
+.button.button-fill#btnPassSubmit {
+    background-color: #9c27b0;
+    width: 60%;
+    margin-left: 20px;
+}
+
+.button.button-fill#feedbackClear {
+    background-color: #9c27b0;
+    width: 60%;
+    margin-left: 60px;
+}
+
+.button.button-fill#feedbackSubmit {
+    background-color: #9c27b0;
+    width: 60%;
+    margin-left: 20px;
+}
+
+.button.button-fill#sell {
+    background-color: #9c27b0;
+    width: 60%;
+    margin-left: 30px;
+}
+
+.button.button-fill#selling {
+    background-color: #9c27b0;
+    width: 80%;
+    margin-left: 0px;
+}
+
+.button.button-fill#request {
+    background-color: #9c27b0;
+    width: 100px;
+    margin-left: 60px;
+}
+
+.button.button-fill#exchange {
+    margin-left: 150px;
+    margin-right: 150px;
+    width: 100px
+}
+
+.button.button-fill#view {
+    margin-left: 10px;
+    margin-right: 80px;
+    width: 100px
+}
+
+.button.button-fill {
+    width: 40%;
+    margin: 70px;
+    margin-left: 120px;
+    background-color: #9c27b0;
+}
+
+
+/*.list-block .label {
+  width:100%;
+}*/
+
+.content-block-title {
+    font-size: 17px;
+}
+
+.notification {
+    margin-left:65%;
+}
+
+.page-content {
+    padding-bottom: 48px;
+}
+
+
+/*.profile-background .fa-edit {
+  color: #e91e63;
+  position: absolute;
+  font-size: 20px;
+  top: 220px;
+  left: 65%;
+}*/
+
+.accordion-item-content .content-block p {
+    font-size: 16px;
+    color: rgba(0, 0, 0, .54);
+}
+
+.content-block-inner {
+    margin-left: -30px;
+    text-align: left;
+    padding-top: 0px;
+}
+
+.content-block.inset {
+    height: 0px;
+}
+
+.navbar-fixed .page .subnavbar, .navbar-fixed.page .subnavbar {
+    background-color: #9c27b0;
+}
+
+#searchText {
+    color: white;
+    font-size: 16px;
+}
+
+#bell {
+    color: white;
+}
+
+#myMessage textarea {
+    color: #fff;
+}
+
+#myMessage textarea::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.messages-content .message-text {
+    min-height: auto;
+}
+
+#myMessage .fa-send, #myMessage .fa-send-o {
+    color: white;
+}
+
+#chat {
+    width: 100px;
+}
+
+#wishlist {
+    height: 60px;
+    width: 60px;
+}
+
+#profile {
+    color: black;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#aboutPic {
+    width: 200px;
+    margin-left: 80px;
+}
+
+#profileName {
+    font-size: 17px;
+    text-align: center;
+}
+
+#profilePic {
+    margin-top: 10px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 3px #9c27b0 solid;
+    margin-left: 15px;
+    /*height: 100px;*/
+    /*border-radius: 50%;
+    border-style: dotted;
+    margin: 10px 0 5px;
+    background-color: #fff;*/
+}
+
+#editProfilePic {
+    margin-top: -20px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+
+}
+
+#editProfilePic2 {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+
+    margin-left: 100px;
+    margin-top: -20px;
+}
+
+#editProfilePic3 {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-left: 30px;
+    margin-top: -20px;
+}
+
+#fromLibrary {
+    color: black;
+    font-size: 15px;
+}
+
+#captureEditable {
+    color: black;
+    font-size: 15px;
+}
+
+#titleUpdate {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#other {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 48px;
+}
+
+#other td {
+    border: 1px solid #eee;
+    width: 33.33vw;
+    height: 33.33vw;
+    margin: 0;
+    padding: 0;
+}
+
+#other td .button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    color: #2b2c2b;
+}
+
+#other td .fa {
+    font-size: x-large;
+    top: 25%;
+    position: relative;
+}
+
+#other td .fa {
+}
+
+#other td .grid-text {
+    word-break: normal;
+    white-space: normal;
+    font-size: smaller;
+    line-height: 18px;
+    text-align: center;
+    width: 100%;
+    top: 30%;
+    position: relative;
+}
+
+div.abc {
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+a {
+    color: black;
+}
+
+a.close-popup {
+    color: green;
+}
+
+.searchbar {
+    background: #9c27b0;
+}
+
+.label {
+    text-align: left;
+}
+
+.list-block .item-title {
+    font-size: 17px;
+}
+
+.list-block .smart-select .item-after {
+    color: black;
+    font-size: 16px;
+}
+
+.list-block .input-item .floating-label, .list-block .input-item .label, .list-block.inputs-list .floating-label, .list-block.inputs-list .label {
+    font-size: 17px;
+    color: black;
+}
+
+.list-block .item-link.list-button {
+    color: black;
+}
+
+.list-block .item-link.list-button:hover {
+    color: red;
+}
+
+img.img-circle {
+    height: 150px;
+    margin-left: -20px;
+}
+
+img#profilePhoto {
+    margin-left: 15px;
+}
+
+img#chat1 {
+    width: 48px;
+    height: 48px;
+}
+
+.login-screen-content {
+    background: linear-gradient(303deg, #9c27b0, #c471f5, #764ba2, #f78ca0, #fe9a8b, #48c6ef, #6f86d6, #feada6, #f5efef);
+    background-size: 1100% 1100%;
+    -webkit-animation: loginBg 25s ease infinite;
+    -moz-animation: loginBg 25s ease infinite;
+    animation: loginBg 25s ease infinite;
+}
+
+@-webkit-keyframes loginBg {
+    0% {
+        background-position: 35% 0%
+    }
+    50% {
+        background-position: 66% 100%
+    }
+    100% {
+        background-position: 35% 0%
+    }
+}
+
+@-moz-keyframes loginBg {
+    0% {
+        background-position: 35% 0%
+    }
+    50% {
+        background-position: 66% 100%
+    }
+    100% {
+        background-position: 35% 0%
+    }
+}
+
+@keyframes loginBg {
+    0% {
+        background-position: 35% 0%
+    }
+    50% {
+        background-position: 66% 100%
+    }
+    100% {
+        background-position: 35% 0%
+    }
+}

@@ -1,0 +1,61 @@
+function searchAction(){
+
+  $$('input[name="rangeFrom"]').on('change', function(){
+    var value = parseFloat(parseFloat($$(this).val()).toFixed(2));
+    $$('input[name="rangeFromTxt"]').val("RM " + value);
+    $$('input[name="rangeTo"]').attr('min', (value + 0));
+    $$('input[name="rangeTo"]').attr('max', (value + 100));
+    $$('input[name="rangeTo"]').attr('value' ,(value + 0));
+    // $$('input[name="rangeToTxt"]').val("RM " + (value + 10));
+  });
+
+    $$('input[name="rangeTo"]').on('change', function(){
+      var value = $$(this).val();
+      $$('input[name="rangeToTxt"]').val("RM " + value);
+    });
+}
+
+function searchAction(){
+
+  $$('input[name="rangeFrom"]').on('change', function(){
+    var value = parseFloat(parseFloat($$(this).val()).toFixed(2));
+    $$('input[name="rangeFromTxt"]').val("RM " + value);
+    $$('input[name="rangeTo"]').attr('min', (value));
+    $$('input[name="rangeTo"]').attr('max', (value + 100));
+    // $$('input[name="rangeTo"]').attr('value' ,(value + 0));
+    // $$('input[name="rangeToTxt"]').val("RM " + (value + 10));
+  });
+
+    $$('input[name="rangeTo"]').on('change', function(){
+      var value = $$(this).val();
+      $$('input[name="rangeToTxt"]').val("RM " + value);
+      $$('input[name="rangeFrom"]').attr('min', (0));
+      $$('input[name="rangeFrom"]').attr('max', (value));
+    });
+}
+
+
+function searchAction(){
+
+  $$('input[name="rangeFrom"]').on('change', function(){
+  //  var value = parseFloat(parseFloat($$(this).val()).toFixed(2));
+    var value =  $$(this).val();
+    var toValue = $$('input[name="rangeTo"]').val();
+
+    if(toValue < value){
+    $$('input[name="rangeTo"]').val(value);
+}
+
+
+    // $$('input[name="rangeFromTxt"]').val("RM " + value);
+    // $$('input[name="rangeTo"]').attr('min', (value + 0));
+    // $$('input[name="rangeTo"]').attr('max', (value + 100));
+     $$('input[name="rangeToTxt"]').val("RM " + (value + 10));
+  });
+
+    $$('input[name="rangeTo"]').on('change', function(){
+      var value = $$(this).val();
+      $$('input[name="rangeToTxt"]').val("RM " + value);
+
+    });
+}
